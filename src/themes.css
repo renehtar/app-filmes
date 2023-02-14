@@ -1,0 +1,15 @@
+:root{
+  --bg-body:#eff3f7;
+  --bg-asider:#cacaca;
+  --bg-secondary: #6963d7;
+  --primary-text:#111418;
+  --blue-text:#2828c9;
+}
+
+body.dark{
+  --bg-body:#1e2022;
+  --bg-asider:#343434;
+  --bg-secondary: #1f2834;
+  --primary-text:#ededed;
+  --blue-text:#6363fc;
+}

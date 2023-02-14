@@ -1,0 +1,124 @@
+.movieLoading,
+.movieNotFound{
+  margin: 1rem;
+  flex: 1;
+  color: var(--primary-text);
+}
+
+.movieTitle{
+  width: 100%;
+  padding: 5px 1rem;
+  border-bottom: 2px solid slategrey;
+  color: var(--primary-text);
+}
+
+.details{
+  display: flex;
+  gap: 1rem;
+  padding: 0 1rem;
+  margin: 1rem calc(112% - 100vw) 0 calc(112% - 100vw);
+}
+
+.details > img{
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: var(--primary-text);
+}
+
+
+.info > h3{
+  color: var(--blue-text);
+}
+
+.genres,
+.productionCompanies{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  width: 100%;
+}
+
+.genres span{
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--blue-text);
+}
+
+.sinopse{
+  width: 100%;
+  padding: 1rem calc(113% - 100vw);
+  color: var(--primary-text);
+}
+
+.sinopse span{
+  font-size: large;
+  color: var(--blue-text);
+}
+
+.videoPlay{
+  display: flex;
+  flex-direction: column;
+  width: 80vw;
+  min-width: 270px;
+  max-width: 1200px;
+  height: 50vw;
+  max-height: 720px;
+  margin: 0 auto;
+  gap: 1rem;
+}
+
+.trailer{
+  flex: 1;
+}
+
+.videoPlay > a{
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  color: var(--blue-text);
+}
+
+.videoPlay > a > svg{
+  animation: arrowYoutube 1.8s ease-in-out infinite;
+}
+
+.similar{
+  padding: 0 1rem;
+}
+
+.similarTitle{
+  font-weight: 400;
+  margin: 0.8rem 0;
+  color: var(--primary-text);
+}
+
+.similarCardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@keyframes arrowYoutube {
+  0%, 30%,60%, 100%{
+    transform: translateX(0);
+  }
+  15%, 45%{
+    transform: translateX(0.2rem);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .details{
+    flex-direction: column;
+  }
+}

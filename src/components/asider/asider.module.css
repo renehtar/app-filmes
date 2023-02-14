@@ -1,0 +1,42 @@
+
+.releasesContainer{
+  display: flex;
+  flex-direction: column;
+  max-width: 330px;
+  min-width: 12rem;
+  padding: 0.5rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  list-style: none;
+  background: var(--bg-asider);
+}
+
+.releasesCard{
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s ease;
+  background: #e7e7e7;
+}
+
+.releasesCard:hover{
+  filter: brightness(1.1);
+}
+
+.releasesCard img{
+  width: 100%;
+  height: 15rem;
+}
+
+.releaseTitle{
+  padding: 5px 8px;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 420px) {
+  .releasesContainer{
+    display: none;
+  }
+}

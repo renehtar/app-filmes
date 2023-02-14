@@ -1,0 +1,20 @@
+.mainContainer{
+  flex: 1;
+}
+
+.movieNotFound,
+.textResult,
+.searchLoading{
+  margin: 1rem;
+  flex: 1;
+  color: var(--primary-text);
+}
+
+.cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  gap: 1rem;
+  margin: 0.5rem 1rem;
+  align-content: flex-start;
+}

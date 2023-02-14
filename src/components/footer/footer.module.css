@@ -1,0 +1,13 @@
+.footerContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: var(--bg-secondary);
+}
+
+.footerContainer *{
+  color: #ededed;
+}
